@@ -18,10 +18,8 @@
   margin: 0;
   background-color: rgb(99, 97, 97);
   display: none;
-
-
   animation: menu 1s ease-in-out;
-  transform-origin:center;
+  transform-origin:top;
 
 }
 
@@ -33,16 +31,15 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 @keyframes menu {
-  0%,20%,50% {
-    transform: translateZ(0);
-  }
-  40% {
-    transform: translate3d(0,-3rem,0) scaleY(1.1);
+  0%{
+    transform: scaleY(0);
   }
   70% {
-    transform: translate3d(0,-1.5rem,0) scaleY(1.05);
+    transform: scaleY(1.1);
   }
-
+  100% {
+    transform: scaleY(1);
+  }
   }
 
 
